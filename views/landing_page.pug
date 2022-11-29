@@ -1,0 +1,11 @@
+html 
+    head 
+        title Landing Page 
+    body 
+    form(action="/landing_page" method="POST")
+        if(message)
+            h3 #{message} 
+        button(type="submit" name="update" formaction="/updatepass") Change Password 
+        br
+        button(type="submit" name="logout" formaction="/logout") Logout
+
